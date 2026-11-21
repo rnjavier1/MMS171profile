@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700;900&display=swap');
+
+:root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --border-color: #444444;
+    --accent-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    /* Body font with web-safe fallbacks */
+    font-family: 'Inter', Arial, Helvetica, sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+HEADING
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', 'Times New Roman', Times, serif;
+    color: var(--accent-color);
+    text-align: center;
+    font-weight: 900; 
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+TEXTING
+h1, h2, h3 {
+    color: var(--accent-color);
+    text-align: center;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+strong {
+    color: var(--accent-color);
+}
+
+DIVIDER
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 10px 0;
+}
+
+HEADING
+.header {
+    text-align: center;
+    border: 1px solid var(--border-color);
+    padding: 30px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #aaaaaa;
+    margin-top: 15px;
+}
+
+PROFILE
+.profile-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid var(--border-color);
+    padding: 30px;
+}
+
+.profile-image {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+  display: block;
+  margin: 0 auto; 
+}
+
+.profile-text {
+    flex: 1;
+}
+
+LISTED
+.interest-list, .contact-links {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.interest-list li, .contact-links li {
+    margin-bottom: 10px;
+}
+
+DROPDOWN
+.dropdown {
+    text-align: center;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    cursor: pointer;
+}
+
+summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.dropdown-content {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+GRIDLAYOUT
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    text-align: left;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card time {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.card p {
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+LINKS
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+a:hover {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+MOBILE REQUIRED
+@media (max-width: 600px) {
+    .profile-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card h3, .card time, .card p {
+        text-align: center;
+    }
+}
