@@ -16,7 +16,6 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    /* Body font with web-safe fallbacks */
     font-family: 'Inter', Arial, Helvetica, sans-serif; 
     display: flex;
     flex-direction: column;
@@ -25,7 +24,6 @@ body {
     line-height: 1.6;
 }
 
-HEADING
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', 'Times New Roman', Times, serif;
     color: var(--accent-color);
@@ -39,13 +37,6 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     gap: 40px;
-}
-
-TEXTING
-h1, h2, h3 {
-    color: var(--accent-color);
-    text-align: center;
-    font-weight: normal;
 }
 
 h1 {
@@ -71,14 +62,12 @@ strong {
     color: var(--accent-color);
 }
 
-DIVIDER
 .divider {
     border: none;
     border-top: 1px solid var(--border-color);
     margin: 10px 0;
 }
 
-HEADING
 .header {
     text-align: center;
     border: 1px solid var(--border-color);
@@ -91,7 +80,6 @@ blockquote {
     margin-top: 15px;
 }
 
-PROFILE
 .profile-layout {
     display: flex;
     flex-direction: row;
@@ -103,19 +91,18 @@ PROFILE
 }
 
 .profile-image {
-  width: 600px;
-  height: 600px;
-  object-fit: cover;
-  border: 1px solid var(--border-color);
-  display: block;
-  margin: 0 auto; 
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    display: block;
 }
 
 .profile-text {
     flex: 1;
 }
 
-LISTED
 .interest-list, .contact-links {
     list-style: none;
     text-align: center;
@@ -126,7 +113,6 @@ LISTED
     margin-bottom: 10px;
 }
 
-DROPDOWN
 .dropdown {
     text-align: center;
     border: 1px solid var(--border-color);
@@ -146,7 +132,6 @@ summary {
     border-top: 1px solid var(--border-color);
 }
 
-GRIDLAYOUT
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -182,7 +167,6 @@ GRIDLAYOUT
     font-size: 0.95rem;
 }
 
-LINKS
 a {
     color: var(--accent-color);
     text-decoration: none;
@@ -194,7 +178,6 @@ a:hover {
     border-bottom: 1px solid var(--accent-color);
 }
 
-MOBILE REQUIRED
 @media (max-width: 600px) {
     .profile-layout {
         flex-direction: column;
